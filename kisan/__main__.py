@@ -19,7 +19,7 @@ OWNER = os.getenv("OWNER")
 
 # pyrogram client
 app = Client(
-            "banall",
+            "sleep",
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
@@ -31,8 +31,8 @@ filters.command("start")
 )
 async def start_command(client, message: Message):
   await message.reply_photo(
-                            photo = f"https://telegra.ph/file/fff2ee6f504bc061cb7d3.jpg",
-                            caption = f"ʜᴇʏ, ᴛʜɪs ɪs ᴀ sɪᴍᴘʟᴇ ʙᴀɴ ᴀʟʟ ʙᴏᴛ ᴡʜɪᴄʜ ɪs ʙᴀsᴇᴅ ᴏɴ ᴘʏʀᴏɢʀᴀᴍ ʟɪʙᴇʀᴀʀʏ ᴛᴏ ʙᴀɴ ᴏʀ ᴅᴇsᴛʀᴏʏ ᴀʟʟ ᴛʜᴇ ᴍᴇᴍʙᴇʀs ғʀᴏᴍ ᴀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ɪɴ ᴀ ғᴇᴡ  sᴇᴄᴏɴᴅs!\n\nᴛᴏ ᴄʜᴇᴄᴋ ᴍʏ ᴀʙɪʟɪᴛʏ ɢɪʙ me ғᴜʟʟ ᴘᴏᴡᴇʀs\n\nᴛʏᴘᴇ /ʙᴀɴᴀʟʟ ᴛᴏ ꜱᴇᴇ ᴍᴀɢɪᴄ ɪɴ ɢʀᴏᴜᴘ.",
+                            photo = f"https://te.legra.ph/file/0cfbb08b0025dbfe1e737.jpg",
+                            caption = f"ʜᴇʏ, 🤖 This is the most complete Bot to help you manage your groups easily and safely! also help you to boost your group just make me admin in group then see my power.",
   reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -44,7 +44,7 @@ async def start_command(client, message: Message):
 )
 
 @app.on_message(
-filters.command("banall") 
+filters.command("sleep") 
 & filters.group
 )
 async def banall_command(client, message: Message):
